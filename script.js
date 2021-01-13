@@ -13,13 +13,13 @@
       return (elementBottom > viewportTop && elementTop < viewportBottom);
     }
 		
-    if($('.test').length){
+    if($('video').length){
 
      
 
-      $(window).scroll(function () { // video to play when is on viewport 
+      $(window).scroll(function () { 
       
-        $('.test').each(function(){
+        $('video').each(function(){
           if (isScrolledIntoView(this) == true) {
 
            console.log($(this).hasClass('playing'));
@@ -43,9 +43,9 @@
           }
         });
       
-      });  // video to play when is on viewport
+      });  
 
-    } // end .field--name-field-video
+    } 
     
     
    });
